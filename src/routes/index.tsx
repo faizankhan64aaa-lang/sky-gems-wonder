@@ -1,26 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
+import WeatherApp from "@/components/WeatherApp";
 
 export const Route = createFileRoute("/")({
-  component: Index,
+  component: WeatherApp,
+  head: () => ({
+    meta: [
+      { title: "Skyline Weather — Live forecast & 7-day outlook" },
+      { name: "description", content: "Beautiful real-time weather with hourly and 7-day forecasts, geolocation, favorites, and °C/°F units." },
+      { property: "og:title", content: "Skyline Weather" },
+      { property: "og:description", content: "Live weather, hourly + 7-day forecast, geolocation, favorites." },
+    ],
+  }),
 });
-
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
-}
