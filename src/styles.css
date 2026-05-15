@@ -37,15 +37,15 @@
 :root {
   --radius: 1rem;
 
-  /* Sky / atmospheric palette */
-  --background: oklch(0.22 0.05 250);
-  --foreground: oklch(0.98 0.01 250);
-  --card: oklch(0.28 0.06 252);
-  --card-foreground: oklch(0.98 0.01 250);
-  --popover: oklch(0.28 0.06 252);
-  --popover-foreground: oklch(0.98 0.01 250);
-  --primary: oklch(0.78 0.15 220);
-  --primary-foreground: oklch(0.18 0.05 250);
+  /* Sky Blue #38BDF8, Deep Blue #1D4ED8, Soft White #E0F2FE */
+  --background: #1D4ED8;
+  --foreground: #E0F2FE;
+  --card: #1D4ED8;
+  --card-foreground: #E0F2FE;
+  --popover: #1D4ED8;
+  --popover-foreground: #E0F2FE;
+  --primary: #38BDF8;
+  --primary-foreground: #0c2340;
   --secondary: oklch(0.35 0.07 255);
   --secondary-foreground: oklch(0.98 0.01 250);
   --muted: oklch(0.32 0.05 255);
@@ -62,12 +62,13 @@
   --glass-border: oklch(1 0 0 / 18%);
 
   /* Gradients */
-  --gradient-day: linear-gradient(135deg, oklch(0.55 0.18 240) 0%, oklch(0.72 0.15 220) 50%, oklch(0.82 0.13 200) 100%);
-  --gradient-sunset: linear-gradient(135deg, oklch(0.45 0.15 290) 0%, oklch(0.62 0.2 30) 60%, oklch(0.78 0.18 70) 100%);
-  --gradient-night: linear-gradient(135deg, oklch(0.18 0.06 270) 0%, oklch(0.25 0.08 250) 50%, oklch(0.32 0.07 240) 100%);
-  --gradient-rain: linear-gradient(135deg, oklch(0.32 0.05 240) 0%, oklch(0.42 0.07 230) 50%, oklch(0.5 0.06 220) 100%);
-  --gradient-snow: linear-gradient(135deg, oklch(0.55 0.05 240) 0%, oklch(0.78 0.04 230) 60%, oklch(0.92 0.02 220) 100%);
-  --gradient-cloud: linear-gradient(135deg, oklch(0.45 0.04 250) 0%, oklch(0.62 0.05 240) 60%, oklch(0.75 0.04 230) 100%);
+  /* Gradients — Sky Blue / Deep Blue / Soft White */
+  --gradient-day: linear-gradient(135deg, #1D4ED8 0%, #38BDF8 60%, #E0F2FE 100%);
+  --gradient-sunset: linear-gradient(135deg, #1D4ED8 0%, #38BDF8 50%, #E0F2FE 100%);
+  --gradient-night: linear-gradient(135deg, #0b2a8a 0%, #1D4ED8 60%, #38BDF8 100%);
+  --gradient-rain: linear-gradient(135deg, #1D4ED8 0%, #38BDF8 100%);
+  --gradient-snow: linear-gradient(135deg, #38BDF8 0%, #E0F2FE 100%);
+  --gradient-cloud: linear-gradient(135deg, #1D4ED8 0%, #38BDF8 50%, #E0F2FE 100%);
 
   --shadow-glass: 0 10px 40px -10px oklch(0 0 0 / 35%), inset 0 1px 0 0 oklch(1 0 0 / 12%);
   --shadow-glow: 0 0 60px -10px oklch(0.78 0.15 220 / 50%);
