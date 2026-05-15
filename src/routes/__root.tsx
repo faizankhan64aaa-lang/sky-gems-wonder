@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Skyline Weather" },
+      { name: "description", content: "A modern weather application with real-time forecasts, beautiful UI, responsive design, and fast performance for accurate weather updates worldwide." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Skyline Weather" },
+      { property: "og:description", content: "A modern weather application with real-time forecasts, beautiful UI, responsive design, and fast performance for accurate weather updates worldwide." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Skyline Weather" },
+      { name: "twitter:description", content: "A modern weather application with real-time forecasts, beautiful UI, responsive design, and fast performance for accurate weather updates worldwide." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/be3c6438-7508-4966-bb55-6aa290924b30" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/be3c6438-7508-4966-bb55-6aa290924b30" },
     ],
     links: [
       {
